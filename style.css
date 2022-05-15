@@ -1,0 +1,123 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(250, 232, 210);
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  width: 400px;
+  height: 400px;
+  background: lightgrey;
+  border-radius: 15%;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #fefefe;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+.paragraph {
+  display: flex;
+  flex-direction: column;
+}
+
+.paragraph__button {
+  margin: 20px 0 20px 0;
+  background-color: rgb(35, 190, 43);
+  height: 40px;
+  font-size: 20px;
+  border: 1px solid #fefefe;
+  box-shadow: 0 8px 6px -6px black;
+  border-radius: 5px;
+  transition: transform 400ms ease-in;
+  opacity: 1;
+}
+.paragraph__button:hover {
+  background-color: rgb(35, 190, 43, 0.7);
+  color: white;
+  transform: scale(1.1);
+  opacity: 0.7;
+}
+
+.paragraph__symbols {
+  margin: 20px 0 20px 0;
+  text-align: center;
+  height: 30px;
+  border: 1px solid #fefefe;
+  box-shadow: 0 8px 6px -6px black;
+  border-radius: 5px;
+  font-size: 17px;
+  background-color: rgb(250, 232, 210);
+}
+.paragraph__title {
+  margin: 20px 0 20px 0;
+  font-size: 20px;
+}
+.test {
+  display: flex;
+  justify-content: center;
+}
+.counters {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.userCounter {
+  display: flex;
+  font-size: 30px;
+  margin-left: 83px;
+}
+.computerCounter {
+  display: flex;
+  font-size: 30px;
+  margin-right: 83px;
+}
+
+.users {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.usersComputer {
+  margin-right: 40px;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+.usersYou {
+  margin-left: 79px;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.removeBox {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.remove {
+  margin-right: 48px;
+  margin-bottom: 35px;
+  transition: ease-in-out 500ms;
+}
+.remove:hover {
+  transform: scale(1.5);
+  opacity: 0.7;
+}
